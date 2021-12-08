@@ -121,14 +121,14 @@ nav ul li
     left: 0;
     align-items: center;
 }
-.songName
+.songNameBottom
 {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-style: italic;
     padding-left: 42vw;
-    /* text-align: center; */
+    text-align: center;
 }
 .songInfo img
 {

@@ -25,21 +25,21 @@
             <h1>Album Will Appear Here</h1>
             <div class="songItemContainer">
                 <div class="songItem">
-                    <img src="images/cover 1.jpg" alt="">
-                    <span>Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34&nbsp<i class="far fa-play-circle"></i></span></span>
+                    <img src="images/1.jpg" alt="">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songListPlay"><span class="timeStamp">05:34&nbsp<i id = '0'class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
 
                 <div class="songItem">
-                    <img src="images/cover 1.jpg" alt="">
-                    <span>Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34&nbsp<i class="far fa-play-circle"></i></span></span>
+                    <img src="images/1.jpg" alt="">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songListPlay"><span class="timeStamp">05:34&nbsp<i id = '1'class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
 
                 <div class="songItem">
-                    <img src="images/cover 1.jpg" alt="">
-                    <span>Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34&nbsp<i class="far fa-play-circle"></i></span></span>
+                    <img src="images/1.jpg" alt="">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songListPlay"><span class="timeStamp">05:34&nbsp<i id = '2'class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
             </div>
         </div>
@@ -48,19 +48,19 @@
     <div class="bottom">
         <div class="songInfo">
             <img src="images/playing.gif" id ='gif' width="60px" alt="">
-            <span class="songName"> Let me Love You</span>
+            <span class="songNameBottom" id="songNameBottom"> Memories - Maroon 5</span>
         </div>
         <div class="seekbar">
             <input type="range" name="range" id="progressBar" value="0" min="0" max="100">
         <div class="icons">
             <!-- fontawesome icons -->
-            <i class="fas fa-2x fa-step-backward"></i>
+            <i class="fas fa-2x fa-step-backward" id='previous'></i>
             <i class="far fa-2x fa-play-circle" id= 'masterPlay'></i>
-            <i class="fas fa-2x fa-step-forward"></i>
+            <i class="fas fa-2x fa-step-forward" id='next'></i>
         </div>
         </div> 
     </div>
     <script src="https://kit.fontawesome.com/6468bcecfe.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script type='module' src="script.js"></script>
 </body>
 </html>
