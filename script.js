@@ -5,6 +5,7 @@ console.log("welcome to spotify");
 
 
 let songIndex=0;
+let currentid=0;
 let masterplay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('progressBar');
 let songNameBottom=document.getElementById('songNameBottom');
@@ -16,8 +17,15 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs=[
     {songName:"Memories - Maroon 5", filePath:"music/1.mp3",coverPath:"images/1.jpg"},
-    {songName:"I Believe In You - Michael Buble", filePath:"music/1.mp3",coverPath:"images/1.jpg"},
-    {songName:"Choo Lo - The Local Train", filePath:"music/2.mp3",coverPath:"images/1.jpg"}
+    {songName:"I Believe In You - Michael Buble", filePath:"music/2.mp3",coverPath:"images/2.jpg"},
+    {songName:"Choo Lo - The Local Train", filePath:"music/3.mp3",coverPath:"images/3.jpg"},
+    {songName:"With Little Help - The Beatles", filePath:"music/4.mp3",coverPath:"images/4.jpg"},
+    {songName:"SOS - Avicii", filePath:"music/5.mp3",coverPath:"images/5.jpg"},
+    {songName:"Someone You Loved - Lewis Capaldi ", filePath:"music/6.mp3",coverPath:"images/6.jpg"},
+    {songName:"Boulevard of Broken Dreams", filePath:"music/7.mp3",coverPath:"images/7.jpg"},
+    {songName:"Honey And The Moon", filePath:"music/8.mp3",coverPath:"images/8.jpg"},
+    {songName:"Ishaaron Mein Girl in the city ", filePath:"music/9.mp3",coverPath:"images/9.jpg"},
+    {songName:"Queen - Crazy Little Thing Called Love", filePath:"music/10.mp3",coverPath:"images/10.jpg"},
 ];
 
 songItems.forEach((element,i)=> {
@@ -63,12 +71,12 @@ const makeAllPlays = ()=>{
 };
 Array.from(document.getElementsByClassName("songItemPlay")).forEach((element)=>{
     element.addEventListener('click',(e)=>{
-
-        if(audioElement.paused || audioElement.currentTime<=0)
+        songIndex=parseInt(e.target.id);      
+        if(audioElement.paused || audioElement.currentTime<=0 || currentid!=songIndex)
         {
+        currentid = songIndex;
         // console.log(e.target);
         makeAllPlays();
-        songIndex=parseInt(e.target.id);
         gif.style.opacity=1;
         songNameBottom.innerText = songs[songIndex].songName;
         console.log(songs[songIndex].songName);
