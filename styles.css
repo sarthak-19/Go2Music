@@ -79,6 +79,7 @@ nav ul li
 #progressBar
 {
     width: 75%;
+    cursor: pointer;
 }
 .songItem
 {
@@ -116,6 +117,7 @@ nav ul li
 {
     position:absolute;
     top:5px;
+    font-family: 'Montserrat', sans-serif;
     left: 0;
     align-items: center;
 }
@@ -136,7 +138,7 @@ nav ul li
     width: 21vw;
     height: 3vw;
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 0.4s ease-in;
 }
 .seekbar
 {
